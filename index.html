@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="auto" class="scroll-smooth h-full bg-transparent">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqua Nexus | Premium Portfolio</title>
+
+    <!-- meta -->
+    
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+  
+  </head>
+  <body class="min-h-screen bg-gray-50 dark:bg-[#0d1117] text-gray-800 dark:text-gray-300 antialiased overflow-x-hidden transition-colors duration-300">
+    <!-- ---------------PreLoad---------------- -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-black">
+      <!-- Background glow effects -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute w-96 h-96 top-1/4 left-1/4 opacity-30 rounded-full blur-3xl bg-blue-500/20"></div>
+        <div class="absolute w-64 h-64 bottom-1/4 right-1/4 opacity-20 rounded-full blur-3xl bg-purple-500/20"></div>
+      </div>
+
+      <div id="logo" class="relative z-10 flex flex-col items-center opacity-0 translate-y-8 blur-sm">
+        <!-- Logo text -->
+        <h1 class="font-sans text-5xl md:text-7xl font-bold mb-2 tracking-tight text-gray-900 dark:text-white">
+          Aqua <span class="text-cyan-600 dark:text-cyan-400">Nexus</span>
+        </h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm tracking-[0.3em] uppercase mb-8">
+          Premium Portfolio
+        </p>
+
+        <!-- Progress bar -->
+        <div class="w-64 h-1 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden relative">
+          <div id="progressBar" class="absolute top-0 left-0 h-full bg-cyan-500 dark:bg-cyan-400 w-0 transition-all duration-75 ease-out"></div>
+        </div>
+
+        <!-- Percentage text -->
+        <span id="percent" class="text-gray-600 dark:text-gray-500 text-sm mt-4 font-mono">0%</span>
+      </div>
+    </div>
+
+    <!-- ---------------Background Iframe---------------- -->
+    <div class="fixed inset-0 w-full h-full bg-gray-50 dark:bg-[#0d1117] pointer-events-auto transition-colors duration-300">
+      <!-- 3D Scene -->
+      <iframe
+        id="spline-frame"
+        src="https://my.spline.design/underwatertransition-PpOEUxeaaBac5MveqlrNIFpt/"
+        class="w-full h-full border-0 relative z-0"
+        title="3D Underwater Scene"
+        loading="lazy"
+        allow="fullscreen; autoplay; mouse-move; gyroscope; accelerator"
+      ></iframe>
+      <!-- Bottom Gradient Fade: Light Mode uses white/gray fade, Dark uses dark fade -->
+      <div class="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-gray-50 dark:from-[#0d1117] via-gray-50/80 dark:via-[#0d1117]/80 to-transparent pointer-events-none z-10 transition-colors duration-300"></div>
+    </div>
+
+    <!-- ---------------Main Content---------------- -->
+    <div class="container mx-auto px-4 relative pointer-events-none">
+      <!-- Navigation -->
+      <nav class="flex justify-between items-center py-8 opacity-0 -translate-y-5 pointer-events-none">
+        <div class="text-2xl font-bold uppercase tracking-widest text-gray-900 dark:text-white pointer-events-auto transition-colors">Aqua <span class="text-cyan-600 dark:text-[#58a6ff]">Nexus</span></div>
+        <div class="socials pointer-events-auto">
+          <a href="#" class="text-gray-700 dark:text-white text-2xl hover:text-cyan-600 dark:hover:text-[#58a6ff] transition-colors"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <header class="hero min-h-[80vh] flex flex-col md:flex-row items-center justify-between gap-8 relative pointer-events-none">
+        <div class="hero-content flex-1 opacity-0 -translate-x-12 pointer-events-none">
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-br from-gray-900 to-cyan-600 dark:from-white dark:to-[#58a6ff] leading-tight pointer-events-auto">
+            Crafting Digital <br />
+            Experiences
+          </h1>
+          <p class="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-xl pointer-events-auto">
+            We build premium, high-performance web solutions that captivate your
+            audience and drive results.
+          </p>
+          <a href="#features" class="btn inline-block px-8 py-4 bg-cyan-600 dark:bg-[#58a6ff] text-white rounded-full font-semibold border-2 border-transparent transition-all hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(88,166,255,0.2)] hover:bg-transparent hover:border-cyan-600 dark:hover:border-[#58a6ff] hover:text-cyan-600 dark:hover:text-[#58a6ff] pointer-events-auto">Explore Work</a>
+        </div>
+        <!-- Visual section removed -->
+        <div class="hero-visual hidden md:flex flex-1 items-center justify-center opacity-0 scale-90 pointer-events-none">
+             <!-- Placeholder kept for spacing -->
+             <div class="w-64 h-64 rounded-full bg-gradient-to-tr from-cyan-400 to-purple-400 dark:from-[#58a6ff] dark:to-purple-500 blur-[80px] opacity-20 animate-pulse"></div>
+        </div>
+      </header>
+
+      <!-- Features Section -->
+      <section id="features" class="features py-20 pointer-events-none">
+        <div class="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div class="feature-card bg-white dark:bg-[#161b22] p-10 rounded-2xl border border-gray-200 dark:border-[#30363d] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-600 dark:hover:border-[#58a6ff] opacity-0 translate-y-8 pointer-events-auto shadow-lg dark:shadow-none">
+            <i class="fas fa-bolt text-3xl text-cyan-600 dark:text-[#58a6ff] mb-6"></i>
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">High Performance</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              Optimized for speed and efficiency to ensure your users never
+              wait.
+            </p>
+          </div>
+          <div class="feature-card bg-white dark:bg-[#161b22] p-10 rounded-2xl border border-gray-200 dark:border-[#30363d] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-600 dark:hover:border-[#58a6ff] opacity-0 translate-y-8 pointer-events-auto shadow-lg dark:shadow-none">
+            <i class="fas fa-palette text-3xl text-cyan-600 dark:text-[#58a6ff] mb-6"></i>
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Premium Design</h3>
+            <p class="text-gray-600 dark:text-gray-400">Aesthetics that speak volumes and leave a lasting impression.</p>
+          </div>
+          <div class="feature-card bg-white dark:bg-[#161b22] p-10 rounded-2xl border border-gray-200 dark:border-[#30363d] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-600 dark:hover:border-[#58a6ff] opacity-0 translate-y-8 pointer-events-auto shadow-lg dark:shadow-none">
+            <i class="fas fa-mobile-alt text-3xl text-cyan-600 dark:text-[#58a6ff] mb-6"></i>
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Responsive</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              Flawless experience across all devices, from mobile to desktop.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-16 text-center border-t border-gray-200 dark:border-[#30363d] mt-16 text-gray-600 dark:text-gray-500 pointer-events-none">
+        <p class="pointer-events-auto">&copy; 2025 Aqua Nexus. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <!-- UI Controls -->
+    <div class="fixed bottom-8 right-8 z-50 flex flex-col gap-4 pointer-events-auto">
+      <button id="themeToggle" class="w-12 h-12 rounded-full bg-white dark:bg-[#161b22] text-gray-800 dark:text-white shadow-lg border border-gray-200 dark:border-[#30363d] flex items-center justify-center hover:scale-110 transition-transform" title="Toggle Theme">
+        <i class="fas fa-moon dark:hidden"></i>
+        <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+      </button>
+      
+      <button id="speedToggle" class="w-12 h-12 rounded-full bg-white dark:bg-[#161b22] text-gray-800 dark:text-white shadow-lg border border-gray-200 dark:border-[#30363d] flex items-center justify-center hover:scale-110 transition-transform" title="Slow Motion">
+        <i class="fas fa-tachometer-alt"></i>
+      </button>
+
+      <button id="muteToggle" class="w-12 h-12 rounded-full bg-white dark:bg-[#161b22] text-gray-800 dark:text-white shadow-lg border border-gray-200 dark:border-[#30363d] flex items-center justify-center hover:scale-110 transition-transform" title="Toggle Sound">
+        <i class="fas fa-volume-up"></i>
+      </button>
+    </div>
+
+    <!-- GSAP Libraries -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- preloader-->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const preloaderRef = document.getElementById("preloader");
+        const logoRef = document.getElementById("logo");
+        const progressBarRef = document.getElementById("progressBar");
+        const percentRef = document.getElementById("percent");
+
+        // Simulate loading progress or hook into actual asset loading here
+        const progress = { value: 0 };
+        
+        const tl = gsap.timeline({
+          onComplete: () => {
+            if (preloaderRef) {
+              // Fade out preloader
+              gsap.to(preloaderRef, {
+                opacity: 0,
+                duration: 0.5,
+                onComplete: () => {
+                  preloaderRef.style.display = "none";
+                  // Optional: Trigger main content animations here
+                }
+              });
+            }
+          },
+        });
+
+        // 1. Animate logo entrance
+        tl.to(logoRef, {
+          opacity: 1,
+          y: 0,
+          filter: "blur(0px)",
+          duration: 0.8,
+          ease: "power3.out",
+        });
+
+        // 2. Animate progress bar (simulated loading time)
+        tl.to(progress, {
+          value: 100,
+          duration: 2.5, // Adjust this to match desired "loading" time
+          ease: "power2.inOut",
+          onUpdate: () => {
+            const val = Math.round(progress.value);
+            if (percentRef) percentRef.textContent = `${val}%`;
+            if (progressBarRef) progressBarRef.style.width = `${val}%`;
+          },
+        }, "-=0.3");
+
+        // 3. Animate logo exit slightly before container fades
+        tl.to(logoRef, {
+          opacity: 0,
+          y: -20,
+          duration: 0.4,
+          ease: "power2.in",
+        });
+      });
+    </script>
+
+    <!-- Main Script -->
+    <script src="src/script.js"></script>
+  </body>
+</html>
